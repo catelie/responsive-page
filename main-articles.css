@@ -1,0 +1,36 @@
+body {
+  padding-top: 48px;
+}
+#main-articles {
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+  padding: 10px 5px 5px 5px;
+}
+
+#main-articles > div {
+  flex: 1 1 auto;
+}
+#main-articles article {
+  padding: 5px;
+}
+#main-articles a {
+  display: block;
+  background: blueviolet;
+  min-height: 200px;
+}
+
+@media (min-width: 700px) {
+  #main-articles {
+    flex-direction: row;
+  }
+  #primary-article {
+    width: 50vw;
+  }
+  #primary-article article {
+    height: 100%;
+  }
+  #primary-article a {
+    height: 100%;
+  }
+}
