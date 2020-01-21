@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  font-size: 10px;
-  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
 }
 
 body {
@@ -17,7 +17,15 @@ body {
   right: 0;
   top: 0;
   z-index: 10;
-  justify-content: space-between;
+}
+.nav-content {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-items {
+  flex: 1 1 auto;
+  display: none;
 }
 
 .logo {
@@ -92,4 +100,28 @@ body {
   padding: 10px;
   font-size: 20px;
   color: orange;
+}
+
+.blue {
+  display: block;
+  width: 100px;
+  height: 48px;
+  background-color: orchid;
+}
+
+.title1 {
+  padding: 0 0 15px 15px;
+  text-decoration: none;
+  line-height: 1;
+  color: #fff;
+  font-family: Avalon, sans-serif;
+}
+
+#primary-article a {
+  align-items: flex-end;
+}
+.by {
+  font-size: 14px;
+  color: grey;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
 }

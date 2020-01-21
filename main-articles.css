@@ -16,8 +16,31 @@ body {
 }
 #main-articles a {
   display: block;
-  background: blueviolet;
+  background: lightcoral;
   min-height: 200px;
+}
+#primary-article a {
+  display: flex;
+  background: transparent url(images/im2.jpg) no-repeat;
+  min-height: 200px;
+  background-size: cover;
+}
+#primary-article h2 {
+  font-size: 20px;
+}
+
+.gradient2 {
+  display: flex;
+  z-index: 4;
+  pointer-events: none;
+  position: absolute;
+  min-height: 200px;
+  background-size: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  align-items: flex-end;
+}
+.cover-date {
+  display: none;
 }
 
 @media (min-width: 700px) {
@@ -26,11 +49,77 @@ body {
   }
   #primary-article {
     width: 50vw;
+    position: relative;
   }
   #primary-article article {
     height: 100%;
   }
   #primary-article a {
     height: 100%;
+  }
+  #primary-article h2 {
+    font-size: 40px;
+  }
+  .cover-gradient {
+    background: transparent
+      url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png)
+      no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    bottom: 4px;
+    left: 4px;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: 4;
+  }
+
+  .cover-logo {
+    background: transparent url(images/im3.svg) no-repeat;
+    background-size: contain;
+    left: 24px;
+    max-width: 50%;
+    height: 100%;
+    max-height: 112px;
+    line-height: 1;
+    top: 24px;
+    pointer-events: none;
+    text-align: right;
+  }
+
+  .cover-date,
+  .cover-logo {
+    color: #fff;
+    position: absolute;
+    right: 24px;
+    z-index: 5;
+  }
+
+  .cover-date {
+    display: block;
+    top: 16px;
+  }
+
+  .gradient2 {
+    display: flex;
+    z-index: 4;
+    pointer-events: none;
+    position: absolute;
+    min-height: 200px;
+    background-size: cover;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 700px) {
+  .nav-items {
+    display: block;
   }
 }
