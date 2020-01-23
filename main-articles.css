@@ -4,7 +4,7 @@ body {
 #main-articles {
   display: flex;
   flex-direction: column;
-  margin-top: -5px;
+
   padding: 10px 5px 5px 5px;
 }
 
@@ -15,6 +15,7 @@ body {
   padding: 5px;
 }
 #main-articles a {
+  text-decoration: none;
   display: block;
   background: lightcoral;
   min-height: 200px;
@@ -28,12 +29,27 @@ body {
 #primary-article h2 {
   font-size: 20px;
 }
+#secondary-article p:first-child {
+  font-size: 20px;
+}
+#secondary-article .pr {
+  display: flex;
+  background: transparent url(images/im4.jpg) no-repeat;
+  min-height: 200px;
+  background-size: cover;
+}
+#secondary-article .pr2 {
+  display: flex;
+  background: transparent url(images/im5.jpg) no-repeat;
+  min-height: 200px;
+  background-size: cover;
+}
 
 .gradient2 {
   display: flex;
   z-index: 4;
   pointer-events: none;
-  position: absolute;
+  position: relative;
   min-height: 200px;
   background-size: cover;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -46,9 +62,10 @@ body {
 @media (min-width: 700px) {
   #main-articles {
     flex-direction: row;
+    margin-top: 21px;
   }
   #primary-article {
-    width: 50vw;
+    width: 70%;
     position: relative;
   }
   #primary-article article {
@@ -60,6 +77,13 @@ body {
   #primary-article h2 {
     font-size: 40px;
   }
+  #secondary-article {
+    width: 30%;
+  }
+  #secondary-article > .title {
+    font-size: 20px;
+  }
+
   .cover-gradient {
     background: transparent
       url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png)
@@ -94,19 +118,20 @@ body {
     color: #fff;
     position: absolute;
     right: 24px;
+
     z-index: 5;
   }
 
   .cover-date {
     display: block;
-    top: 16px;
+    top: 33px;
   }
 
   .gradient2 {
     display: flex;
     z-index: 4;
     pointer-events: none;
-    position: absolute;
+    position: relative;
     min-height: 200px;
     background-size: cover;
     background: linear-gradient(
@@ -118,8 +143,19 @@ body {
   }
 }
 
-@media (min-width: 700px) {
-  .nav-items {
-    display: block;
+@media (min-width: 1000px) {
+  #secondary-article > .title {
+    font-size: 26px;
+  }
+  @media (min-width: 1300px) {
+    #main-articles {
+      height: 520px;
+    }
+  }
+  #secondary-article {
+    height: 100%;
+  }
+  #secondary-article article {
+    height: 50%;
   }
 }
