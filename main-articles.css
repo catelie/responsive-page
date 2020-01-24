@@ -28,6 +28,7 @@ body {
 }
 #primary-article h2 {
   font-size: 20px;
+  font-weight: bold;
 }
 #secondary-article p:first-child {
   font-size: 20px;

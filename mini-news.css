@@ -1,0 +1,65 @@
+#lastnews {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.titlenew {
+  font-size: 24px;
+  font-family: avalon, sans-serif;
+  letter-spacing: -0.015em;
+  margin-bottom: 24px;
+  color: #f42;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.miniatures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.min {
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+  max-width: 270px;
+}
+
+.imgmini {
+  width: 270px;
+  height: 135px;
+  margin-bottom: 8px;
+}
+
+.story-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-weight: bold;
+}
+.hour {
+  font-size: 13px;
+  line-height: 20px;
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+}
+.mainlast {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1176px;
+  margin: auto;
+}
+
+@media (min-width: 700px) {
+  /* te quieroooo 💗 */
+}
